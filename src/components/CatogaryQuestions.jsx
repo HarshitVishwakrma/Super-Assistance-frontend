@@ -23,7 +23,7 @@ export default function CatogaryQuestions() {
         console.log(categoriesToSubmit)
         try {
             // submit the question to the backend.
-            const response = await fetch('http://localhost:3000/categoryQuestion', {
+            const response = await fetch('https://superassistantbackend.vercel.app/categoryQuestion', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

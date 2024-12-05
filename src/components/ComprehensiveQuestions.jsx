@@ -43,7 +43,7 @@ function ComprehensiveQuiz() {
         correctAnswer: q.options[q.selectedOption],
       }));
 
-      const response = await fetch("http://localhost:3000/comprehensiveQuestion", {
+      const response = await fetch("https://superassistantbackend.vercel.app/comprehensiveQuestion", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ paragraph, questions: formattedQuestions }),

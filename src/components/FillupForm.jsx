@@ -42,7 +42,7 @@ function Cloze() {
 
     const sendQuizToBackend = async () => {
       try {
-        const response = await fetch('http://localhost:3000/clozeQuestion', {
+        const response = await fetch('https://superassistantbackend.vercel.app/clozeQuestion', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
